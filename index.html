@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Currency Coverter</h1>
+
+    <input type="number" id="amount">
+    <label for="currency-type">From</label>
+
+    <select name="cur-type" id="fromCurrency">
+        <option value="">PLease choose</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="KRW">KRW</option>
+        <option value="KRW">VND</option>
+    </select>
+
+    <label for="currency-type">Select the input currency: </label>
+    <input type="radio" name="toCurrency" value="USD" checked="checked">USD</input> 
+    <input type="radio" name="toCurrency" value="EUR">EUR</input>
+    <input type="radio" name="toCurrency" value="KRW">KRW</input>
+    <input type="radio" name="toCurrency" value="VND">VND</input>
+    
+    <button id="currencyConvert" onclick=currencyConvert()>
+        Convert Currency
+    </button>
+
+    <span id="resultArea">Result Here</span>
+
+    <script src="main.js"></script>
+</body>
+</html>
